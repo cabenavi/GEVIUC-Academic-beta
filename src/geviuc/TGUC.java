@@ -55,8 +55,8 @@ public class TGUC{
 	String[]        NombreCentral;		// NombreCentral[t] nombre de central
 	String[]		Tecnologia;			// Tecnologia[t] de la central
 	String[]		Combustible;		// Combustible[] Combustible que utiliza central para su operacion
-	int[] 			TminOn;				// TminOn[t] Tiempo mínimo de operacion
-	int[] 			TminOff;			// TminOff[t] Tiempo mínimo fuera de servicio
+	int[] 			TminOn;				// TminOn[t] Tiempo mï¿½nimo de operacion
+	int[] 			TminOff;			// TminOff[t] Tiempo mï¿½nimo fuera de servicio
 	int[]			TiniR;				// TiniR[t]
 	int[]			TiniN;				// TiniN[t] tiempo inicial que lleva encendida o apagada la unidad generadora
 	double[]		PiniN;				// PiniN[t] potencia inicial en t=-1 para operacion normal 
@@ -137,8 +137,8 @@ public class TGUC{
 	double[][]		PpFx;			// PpFx[ia][t] potencia asignada a cada escalon de la rampa de parada  
 	int[] 			EtpOn;         	// EtpOn[t] etapas durate las cuales la maquina tiene que estar encendida, depende de t si las etapas son de ancho variable          
 	int[] 			EtpOff;       	// EtpOff[t] etapas durate las cuales la maquina tiene que estar apagada, depende de t si las etapas son de ancho variable 
-	int 			EtpOnFin;		// EtpOnFin etapa hasta la cual no se puede exigir a la máquina un tiempo Toff
-	int 			EtpOffFin;		// EtpOffFin etapa hasta la cual no se puede exigir a la máquina un tiempo Toff
+	int 			EtpOnFin;		// EtpOnFin etapa hasta la cual no se puede exigir a la mï¿½quina un tiempo Toff
+	int 			EtpOffFin;		// EtpOffFin etapa hasta la cual no se puede exigir a la mï¿½quina un tiempo Toff
 	int 			EtpOnIni;		// EtpOnIni etapa a partir de la cual aplico condicion Ton, depende de condiciones iniciales
 	int 			EtpOffIni;		// EtpOffIni etapa a partir de la cual aplico condicion Toff, depende de condiciones iniciales 
 	int 			EtpArrBg;		// EtpArrBg etapa hasta la cual Bg=0
@@ -837,7 +837,7 @@ public class TGUC{
 									sum_bgn=cplex.sum(sum_bgn,cplex.prod(fes*CPartida[p],B[t-k-1][0]));
 								}
 								else{
-									if(tt<=(Bgni.length-1)){//no sobrepaso tamaño de Bgni
+									if(tt<=(Bgni.length-1)){//no sobrepaso tamano de Bgni
 										sum_bgn=cplex.sum(sum_bgn,fes*CPartida[p]*Bgni[tt]);
 										tt++;
 									}

@@ -9,7 +9,7 @@
 // Carlos Benavides Farias		
 // Ignacio Alarcon Arias
 // Daniel Espinoza
-// Frank Leañez Grau
+// Frank Leaï¿½ez Grau
 // Rodrigo Palma Benhke             
 // Alejandro Angulo
 // Rodrigo Sepulveda
@@ -71,7 +71,7 @@ public static boolean debMode= true;
     	String typedb="";           //tipo de base de datos
 		String namedb="";           //nombre base de datos
 		String userdb="";           //usuario
-		String passdb="";           //contraseña 
+		String passdb="";           //contrasena 
 	  	
 		//archivos de salida
 	  	String unitfileroot="";
@@ -1765,7 +1765,7 @@ public static boolean debMode= true;
 				}
 				System.out.println("fin solucion energia no suministrado");
 				
-				//Solucion energía perdida
+				//Solucion energia perdida
 				Eperdsol = new double[T][id_load.length];
 				inicializa2double(Eperdsol);
 				for(int t=0;t<T;t++){
