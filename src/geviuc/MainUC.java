@@ -89,9 +89,9 @@ public static boolean debMode= true;
 //			passdb="ce-fcfm";					   
 //	  		unitfileroot = args[1];
 			
-//			passdb=args[1];
+ 			passdb=args[1];
 			
-			passdb="1234";
+			//passdb="1234";
 			
 //			if (args.length > 2){
 //				unitfileroot = unitfileroot + "\\";
